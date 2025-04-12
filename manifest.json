@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Gerenciador de Extensões",
+  "version": "1.0",
+  "description": "Gerencie suas extensões do Chrome facilmente",
+  "permissions": ["management"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
