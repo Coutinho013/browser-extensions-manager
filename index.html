@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="header-nav">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="Logo Extensions" />
+        </div>
+        <button
+          class="mode-toggle"
+          aria-label="Alternar entre claro e escuro"
+          onclick="toggleMode()"
+        >
+          <img
+            src="./assets/images/icon-moon.svg"
+            alt="Ícone de lua para modo escuro"
+            class="mode-icon"
+          />
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="filter-bar">
+        <h1>Extension List</h1>
+        <div class="filter-buttons">
+          <button class="filter-buttons-button" aria-pressed="true">All</button>
+          <button class="filter-buttons-button" aria-pressed="false">
+            Active
+          </button>
+          <button class="filter-buttons-button" aria-pressed="false">
+            Inactive
+          </button>
+        </div>
+      </div>
+      <section class="extensions-grid"></section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Coutinho</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
